@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit()">
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" [(ngModel)]="name" required>
+
+    <label for="products">Bestellung:</label>
+    <input type="text" id="products" name="products" [(ngModel)]="products" required>
+
+    <input type="submit" value="Absenden">
+</form> 

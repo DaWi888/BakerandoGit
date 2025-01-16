@@ -1,0 +1,11 @@
+<app-address *ngIf="name==''" (newOrderName)="onNewName($event)"></app-address>
+<div *ngIf="name!=''">
+    <p>Hallo {{name}}, anbei deine Bestellungen:</p>
+    <div *ngFor="let order of orders">
+        <p>Besteller Name: {{order.name}}</p>
+        <p>Bestellte Produkte: {{order.products}}</p>
+    </div>
+</div>
+
+
+
